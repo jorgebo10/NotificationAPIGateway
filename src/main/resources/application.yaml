@@ -8,3 +8,10 @@ spring:
       percentage: 1
     web:
       skipPattern: (^cleanup.*|.+favicon.*)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
+    enabled-by-default: true
+
